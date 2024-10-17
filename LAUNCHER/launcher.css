@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color:white;
+}
+body {
+    background-image: url("space.jpg");
+    background-size: cover;
+}
+#heading {
+    /* color:white; */
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+.text-container {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+}
+#para {
+    margin-bottom: 20px;
+}
+.text {
+    font-size: 40px;
+    font-weight: bold;
+}
+#special {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+.launch-time {
+    /* background-color: aqua; */
+    position: absolute;
+    bottom: 400px;
+    left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.launch-time div {
+    margin: 20px;
+}
+.launch-time div p {
+    font-size: 35px;
+}
+.button {
+    position: absolute;
+    bottom: 350px;
+    left: 150px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid white;
+}
+.button i {
+    color: black;
+}
+.image {
+    height: 400px;
+    width: 300px;
+    /* background-color: aqua; */
+    position: absolute;
+    bottom: 0px;
+    right: 70px;
+    background-image: url("rocket2.png");
+    background-size: cover;
+    animation: rocket 4s linear infinite
+}
+@keyframes rocket {
+    0%{
+        bottom: 0px;
+        opacity: 0.2;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
